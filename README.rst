@@ -57,7 +57,7 @@ Note: The path to the video should be provided in the example_video.py file
 Notebook
 =========
 
-A Google Colab Notebook is also provided, named MTCNN.ipynb
+A Google Colab Notebook is also provided, named MTCNN_video.ipynb
 
 
 LICENSE
