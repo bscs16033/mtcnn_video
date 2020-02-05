@@ -28,7 +28,7 @@ from mtcnn import MTCNN
 
 detector = MTCNN()
 
-image = cv2.cvtColor(cv2.imread("ivan.jpg"), cv2.COLOR_BGR2RGB)
+image = cv2.cvtColor(cv2.imread("dataset/img1.jpg"), cv2.COLOR_BGR2RGB)
 result = detector.detect_faces(image)
 
 # Result is an array with all the bounding boxes detected. We know that for 'ivan.jpg' there is only one.
@@ -47,6 +47,6 @@ cv2.circle(image,(keypoints['nose']), 2, (0,155,255), 2)
 cv2.circle(image,(keypoints['mouth_left']), 2, (0,155,255), 2)
 cv2.circle(image,(keypoints['mouth_right']), 2, (0,155,255), 2)
 
-cv2.imwrite("ivan_drawn.jpg", cv2.cvtColor(image, cv2.COLOR_RGB2BGR))
+cv2.imwrite("output/img1_output.jpg", cv2.cvtColor(image, cv2.COLOR_RGB2BGR))
 
 print(result)
