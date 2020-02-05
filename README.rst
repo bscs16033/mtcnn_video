@@ -1,7 +1,7 @@
 MTCNN
 #####
 
-This MTCNN was run for video using this implementation of MTCNN as baseline: https://github.com/ipazc/mtcnn  
+In this project, MTCNN was run for video using this implementation of MTCNN as baseline: https://github.com/ipazc/mtcnn  
 
 INSTALLATION
 ############
