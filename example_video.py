@@ -28,7 +28,7 @@ from mtcnn import MTCNN
 
 detector = MTCNN()
 
-videopath = "/content/drive/My Drive/Colab Notebooks/datasets/0-Personally Collected/videos/lawyer.avi"
+videopath = "dataset/FRIENDS_video.mp4"
 
 cap = cv2.VideoCapture(videopath)
 
@@ -40,9 +40,7 @@ while cap.isOpened():
     ret, frame = cap.read()
     #print('entered2')
     #Use MTCNN to detect faces
-    
-    
-
+   
     if ret==True:
         result = detector.detect_faces(frame)
         if result != []:
